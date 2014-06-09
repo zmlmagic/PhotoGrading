@@ -1,0 +1,40 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "PGConfigureAPI.h"
+
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define IOS7_STATEBAR ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0 ?[self setNeedsStatusBarAppearanceUpdate]:[[UIApplication sharedApplication] setStatusBarHidden:NO])
+
+#define IOS7(view) ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0 ?[view setFrame:CGRectMake(view.frame.origin.x, view.frame.origin.y + 20, view.frame.size.width, view.frame.size.height - 20)]:NO)
+
+#define IOS7_VERSION ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0 ?YES:NO)
+
+
+#define WeiXinAppId @"wx19b46101040534ce"
+#define QQAppId     @"101075605"
+
+#import "WeiboSDK.h"
+
+#define UM_APP_KEY @"5317565156240bba71030dfc"
+#define WEIBO_APP_KEY @"2490479306"
+#define WEIBO_APP_REDIRECT_URL @"https://api.weibo.com/oauth2/default.html"
+#define WEIBO_ACCESS_TOKEN @"weibo_access_token"
+#define WEIBO_USER_ID @"weibo_user_id"
+#define WEIBO_USER_INFO_TAG @"get_user_info"
+#define WEIBO_USER_LOGOUT_TAG @"user_logout"
+
+#endif

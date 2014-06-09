@@ -1,0 +1,34 @@
+PODS:
+  - DACircularProgress (2.2.0)
+  - JSONModel (0.11.0)
+  - MBProgressHUD (0.8)
+  - MKNetworkKit (0.87):
+    - Reachability (~> 3.1.0)
+  - MWPhotoBrowser (1.2.1):
+    - DACircularProgress
+    - MBProgressHUD
+    - PSTCollectionView (~> 1.2)
+    - SDWebImage (~> 3.5)
+  - PSTCollectionView (1.2.0)
+  - Reachability (3.1.1)
+  - SDWebImage (3.5.4):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.5.4)
+
+DEPENDENCIES:
+  - JSONModel (~> 0.11.0)
+  - MKNetworkKit (~> 0.87)
+  - MWPhotoBrowser (~> 1.2.1)
+  - SDWebImage (~> 3.5.2)
+
+SPEC CHECKSUMS:
+  DACircularProgress: 659d6fd11b5fc099c13ba9350239d9dca324916a
+  JSONModel: a5f2eb85c46df008a67569447ec408d1040d4bf4
+  MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
+  MKNetworkKit: f174100f92473012138b6b1c3040266af8d43a14
+  MWPhotoBrowser: cd204e6b02686f6fae5034932ad8382f9963f2fc
+  PSTCollectionView: fb2ad2790c6efa306b2caf10315b2c1464d1f5c6
+  Reachability: be4883bb93f31e38266ae3365e5600a317aae735
+  SDWebImage: 1a62010700adbba823b621fc217906739dbf6aa5
+
+COCOAPODS: 0.29.0
